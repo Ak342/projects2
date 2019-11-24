@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Food-Website</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta http-equiv="refresh" content="45">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	
+	<!--BOOTSTRAP 4 LINK-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+	<!--CSS LINK-->
+	<link rel="stylesheet" href="style.css">
+	
+	<!--FONT AWESOME LINK-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+</head>
+
+
+
+<!--BODY STARTS HERE-->
+
+<body>
+
+
+<!--PART 1 HEADING SECTION-->
+
+<header>
+
+
+<nav class="navbar navbar-expand-md navbar-light">
+	<div class="container mt-2">
+		<a href="#" class="navbar-brand font-weight-bold">FOOD.<span class="logo">LOGO</span></a>
+		
+		
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item navigation"><a href="#" class="nav-link text-white">ABOUT</a></li>
+				<li class="nav-item navigation"><a href="#" class="nav-link text-white">OUR FOOD</a></li>
+				<li class="nav-item navigation"><a href="#" class="nav-link text-white">PLANS</a></li>
+				<li class="nav-item navigation contact"><a href="#" class="nav-link text-white">CONTACT US</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</nav>
+
+
+
+<section>
+
+	<div class="heading">
+		<h1>have no time<br>to prepare <span class="logo">food</span>?</h1>
+		<p>Choose one of our plans, enter delivery time
+		<br>and enjoy delicious food without leaving your home!</p>
+		
+	<br>
+	<button type="button" class="btn text-white food">Order Food</button>
+	<br>
+	<br>
+	<i class="fa fa-twitter"></i> &nbsp&nbsp&nbsp&nbsp <i class="fa fa-facebook"></i> &nbsp&nbsp&nbsp&nbsp <i class="fa fa-instagram"></i> 
+	</div>
+
+</section>
+
+
+</header>
+
+
+
+
+
+<!--Part 2 ADDING & REMOVING CART-->
+
+
+<div class="container-fluid bg">
+
+	<h2 class="font-weight-bold text-white text-center mb-5"><span class="logo">FOOD</span>&nbsp <i class="fa fa-cutlery"></i>&nbsp Selection</h2>
+
+	<div class="row text-center p-5">
+		<div class="col-md-4 col-12">
+			<div class="card-body bg-white text-dark height">
+				<h3>Available Options</h3>
+				
+				<div class="row text-center mt-5" id="pizza">
+					<div class="col-md-6">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Pizza</p>
+					</div>
+					
+					<div class="col-md-6">
+						<p class="display-4">$5.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center" id="burger">
+					<div class="col-md-6">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Burger</p>
+					</div>
+					
+					<div class="col-md-6">
+						<p class="display-4">$2.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center" id="cp">
+					<div class="col-md-6">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Chicken Pasta</p>
+					</div>
+					
+					<div class="col-md-6">
+						<p class="display-4">$4.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center" id="gs">
+					<div class="col-md-6">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Grilled Sandwich</p>
+					</div>
+					
+					<div class="col-md-6">
+						<p class="display-4">$1.99</p>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		<!--BUTTONS-->
+		
+		<div class="col-md-4 col-12 mt-5 height">
+			<button type="button" class="btn mt-5 mb-5 text-white select1" id="addItem">Add to cart >></button>
+			<br>
+			<button type="button" class="btn mb-2 text-white select2" id="removeItem"><< Remove from cart</button>
+		</div>
+		
+		
+		<!--CART 2-->
+		
+		<div class="col-md-4 col-12">
+			<div class="card-body bg-white text-dark height">
+			
+			
+				<div class="p-5" id="cart2">
+					<h4>Your cart is empty</h4>
+					<p>Select an item and click “Add to cart”.</p>
+				</div>
+
+
+
+				<div id="cart3">
+				
+				
+				<div class="row text-center mt-5">
+					<div class="col-md-6" id="pizza2">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Pizza</p>
+					</div>
+					
+					<div class="col-md-6" id="pizza_price">
+						<p class="display-4">$5.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center">
+					<div class="col-md-6" id="burger2">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Burger</p>
+					</div>
+					
+					<div class="col-md-6" id="burger_price">
+						<p class="display-4">$2.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center">
+					<div class="col-md-6" id="cp2">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Chicken Pasta</p>
+					</div>
+					
+					<div class="col-md-6" id="cp_price">
+						<p class="display-4">$4.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center">
+					<div class="col-md-6" id="gs2">
+						<img src="images/image 1.png" height="50" width="50" class="mt-4"> &nbsp <p>Grilled Sandwich</p>
+					</div>
+					
+					<div class="col-md-6" id="gs_price">
+						<p class="display-4">$1.99</p>
+					</div>
+				</div>
+				
+				<div class="row text-center bg-warning p-2" id="total">
+					<div class="col-md-6">
+						<h4>Total Amount</h4>
+					</div>
+					
+					<div class="col-md-6" id="total_price">
+						<p class="animated infinite pulse delay-1s">Calculating..Please Wait..!! We regret for the inconvenience.</p>
+					</div>
+				</div>
+				
+				
+				</div>	
+				
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+	
+	<!--JQ LINK-->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+	
+
+	<!--MINIFIED LINKS of JS AND BS-->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+
+
+	<!--JAVASCRIPT LINK-->
+	
+	<script src="main.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
